@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <title>Profiles | Homemaid</title>
+    <style>
+        body {
+          padding-top: 100px;
+          background-color:  #CADCFC;
+        }
+        .nav-link{
+          font-size: 18px;
+          color: azure;
+          text-decoration: none;
+        }
+        .nav-link:hover{
+            border: 1px solid white;
+            border-radius: 5px;
+            background-color: rgb(4, 18, 66);
+            color: rgb(178, 178, 255) ;
+
+        }
+        .custom-navbar{
+          background-color: #00246B;
+          /* #00246B, #CADCFC */
+          /* #735DA5 #D3C5E5 */
+        }
+      
+        .Profiles{
+            display: flex;
+            flex-wrap:wrap;
+            margin: 20px 60px;
+            /* gap: 30px; */
+            justify-content: space-evenly;
+            padding:50px;
+        }
+        .card{
+            height: 60vh;
+            transition:  0.3s;
+            margin-top:100vh;
+            margin:20px;
+            display:flex;
+            flex-direction: column; 
+            justify-content: space-between; 
+            transform-style: preserve-3d; /* Preserve 3D effects */
+            transition: transform 0.6s; /* Add transition for the flip */
+            position: relative; /* Position relative for the flip effect */
+        }
+        .card-container {
+            flex: 0 0 calc(25% - 20px); /* Set width to one-third minus margin */
+            margin-bottom: 20px; /* Space between rows */
+            position: relative; /* Position relative for the flip effect */
+            perspective: 1000px; /* Add perspective to the container */
+        }
+
+        .card-front, .card-back {
+            position: absolute; /* Position absolute for both sides */
+            width: 100%; /* Full width */
+            backface-visibility: hidden; /* Hide back face when not visible */
+        }
+        .card-back {
+            transform: rotateY(180deg); /* Rotate back face */
+        }
+    
+        .card-body{
+            flex-grow:1;
+            padding:20px;
+        }
+        .card:hover{
+          transform: scale(1.1);
+        }
+        .navbar-brand img {
+            height: 60px; /* Adjust height as needed */
+            width: auto; /* Maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="logo.png" alt="Homemaid Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profiles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  <!-- Employee Profile Card Row 1 -->
+    <div class="Profiles">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-front">
+                    <img src="employee.jpg" class="card-img-top" alt="Employee Image">
+                    <div class="card-body">
+                        <h5 class="card-title">**John Doe**</h5>
+                        <p class="card-text">Software Engineer</p>
+                        <p class="card-text">john.doe@example.com</p>
+                        <p class="card-text">+1234567890</p>
+                        <div class="mt-auto">
+                            <button class="btn btn-primary view-profile">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div class="card-body">
+                        <h5 class="card-title">Profile Details</h5>
+                        <p class="card-text">John has over 5 years of experience in software development, specializing in web applications.</p>
+                        <button class="btn btn-primary close-profile">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-front">
+                    <img src="employee.jpg" class="card-img-top" alt="Employee Image">
+                    <div class="card-body">
+                        <h5 class="card-title">**John Doe**</h5>
+                        <p class="card-text">Software Engineer</p>
+                        <p class="card-text">john.doe@example.com</p>
+                        <p class="card-text">+1234567890</p>
+                        <div class="mt-auto">
+                            <button class="btn btn-primary view-profile">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div class="card-body">
+                        <h5 class="card-title">Profile Details</h5>
+                        <p class="card-text">John has over 5 years of experience in software development, specializing in web applications.</p>
+                        <button class="btn btn-primary close-profile">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-front">
+                    <img src="employee.jpg" class="card-img-top" alt="Employee Image">
+                    <div class="card-body">
+                        <h5 class="card-title">**John Doe**</h5>
+                        <p class="card-text">Software Engineer</p>
+                        <p class="card-text">john.doe@example.com</p>
+                        <p class="card-text">+1234567890</p>
+                        <div class="mt-auto">
+                            <button class="btn btn-primary view-profile">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div class="card-body">
+                        <h5 class="card-title">Profile Details</h5>
+                        <p class="card-text">John has over 5 years of experience in software development, specializing in web applications.</p>
+                        <button class="btn btn-primary close-profile">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Employee Profile Card Row 2  -->
+    <div class="Profiles">
+        <div class="card-container">
+            <div class="card">
+                <div class="card-front">
+                    <img src="employee.jpg" class="card-img-top" alt="Employee Image">
+                    <div class="card-body">
+                        <h5 class="card-title">**John Doe**</h5>
+                        <p class="card-text">Software Engineer</p>
+                        <p class="card-text">john.doe@example.com</p>
+                        <p class="card-text">+1234567890</p>
+                        <div class="mt-auto">
+                            <button class="btn btn-primary view-profile">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div class="card-body">
+                        <h5 class="card-title">Profile Details</h5>
+                        <p class="card-text">John has over 5 years of experience in software development, specializing in web applications.</p>
+                        <button class="btn btn-primary close-profile">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-front">
+                    <img src="employee.jpg" class="card-img-top" alt="Employee Image">
+                    <div class="card-body">
+                        <h5 class="card-title">**John Doe**</h5>
+                        <p class="card-text">Software Engineer</p>
+                        <p class="card-text">john.doe@example.com</p>
+                        <p class="card-text">+1234567890</p>
+                        <div class="mt-auto">
+                            <button class="btn btn-primary view-profile">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div class="card-body">
+                        <h5 class="card-title">Profile Details</h5>
+                        <p class="card-text">John has over 5 years of experience in software development, specializing in web applications.</p>
+                        <button class="btn btn-primary close-profile">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="card-front">
+                    <img src="employee.jpg" class="card-img-top" alt="Employee Image">
+                    <div class="card-body">
+                        <h5 class="card-title">**John Doe**</h5>
+                        <p class="card-text">Software Engineer</p>
+                        <p class="card-text">john.doe@example.com</p>
+                        <p class="card-text">+1234567890</p>
+                        <div class="mt-auto">
+                            <button class="btn btn-primary view-profile">View Profile</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div class="card-body">
+                        <h5 class="card-title">Profile Details</h5>
+                        <p class="card-text">John has over 5 years of experience in software development, specializing in web applications.</p>
+                        <button class="btn btn-primary close-profile">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="Profiles">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="employee.jpg" class="card-img-top" alt="Employee Image">
+                        <div class="card-body">
+                            <h5 class="card-title">**John Doe**</h5>
+                            <p class="card-text">Software Engineer</p>
+                            <p class="card-text">john.doe@example.com</p>
+                            <p class="card-text">+1234567890</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-primary view-profile">View Profile</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="card-body">
+                            <h5 class="card-title">Profile Details</h5>
+                            <p class="card-text">John has over 5 years of experience in software development, specializing in web applications.</p>
+                            <button class="btn btn-primary close-profile">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="employee.jpg" class="card-img-top" alt="Employee Image">
+                        <div class="card-body">
+                            <h5 class="card-title">**John Doe**</h5>
+                            <p class="card-text">Software Engineer</p>
+                            <p class="card-text">john.doe@example.com</p>
+                            <p class="card-text">+1234567890</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-primary view-profile">View Profile</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="card-body">
+                            <h5 class="card-title">Profile Details</h5>
+                            <p class="card-text">John has over 5 years of experience in software development, specializing in web applications.</p>
+                            <button class="btn btn-primary close-profile">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-front">
+                        <img src="employee.jpg" class="card-img-top" alt="Employee Image">
+                        <div class="card-body">
+                            <h5 class="card-title">**John Doe**</h5>
+                            <p class="card-text">Software Engineer</p>
+                            <p class="card-text">john.doe@example.com</p>
+                            <p class="card-text">+1234567890</p>
+                            <div class="mt-auto">
+                                <button class="btn btn-primary view-profile">View Profile</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="card-body">
+                            <h5 class="card-title">Profile Details</h5>
+                            <p class="card-text">John has over 5 years of experience in software development, specializing in web applications.</p>
+                            <button class="btn btn-primary close-profile">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  <script>
+    // Add event listeners for the view profile buttons
+    document.querySelectorAll('.view-profile').forEach(button => {
+        button.addEventListener('click', function() {
+            const card = this.closest('.card');
+            card.style.transform = 'rotateY(180deg)'; // Flip the card
+        });
+    });
+
+    // Add event listeners for the close buttons
+    document.querySelectorAll('.close-profile').forEach(button => {
+        button.addEventListener('click', function() {
+            const card = this.closest('.card');
+            card.style.transform = 'rotateY(0deg)'; // Flip the card back
+        });
+    });
+</script>
+</body>
+</html>
