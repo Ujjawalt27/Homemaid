@@ -1,164 +1,179 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Login Page</title>
-<style>
-/* Reset some basic styles */
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-/* Basic styling for body */
-body {background-image: url(image1.jpg);
-background-repeat: no-repeat;
-background-position: 0%;
-background-size: cover;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif  ;
-background-color: #a67645;
-display: flex;
-justify-content: center;
-align-items: center;
-height: 100vh;
-}
-/* Container for the form */
-.login-container {
-background: rgba(0, 0, 0, 0.4);
-box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
-padding: 30px;
-width: 100%;
-max-width: 500px;
-border-radius: 8px;
-}
-.login-container h2 {
-text-align: center;
-margin-bottom: 20px;
-color: #ffffff;
-}
-.form-group {
-margin-bottom: 15px;
-}
-label {
-display: block;
-font-size: 14px;
-font-weight: bold;
-color:#ffffff ;
-margin-bottom: 5px;
-}
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="text"],
-input[type="number"],
-textarea {
-width: 100%;
-padding: 12px;
-font-size: 16px;
-border-radius: 5px;
-border: 1px solid #0b0505;
-box-sizing: border-box;
-}
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
-input[type="number"]:focus,
-textarea:focus {
-border-color: #654321;
-outline: none;
-}
-.textarea-container {
-position: relative;
-}
-textarea {
-resize: vertical;
-height: 100px;
-}
-.form-btn {
-background-color: #a6703b;
-color: rgb(255, 255, 255);
-border: none;
-padding: 12px 20px;
-font-size: 16px;
-border-radius: 5px;
-width: 100%;
-cursor: pointer;
-}
-.form-btn:hover {
-background-color: #523417;
-}
-.form-footer {
-color: #ffffff;
-font-weight: lighter;
-margin-top: 15px;
-text-align: center;
-}
-.form-footer a {
-text-decoration: none;
-color:whitesmoke;
-font-size: 14px;
-font-weight: bolder;
-}
-.form-footer a:hover {
-text-decoration: underline;
-}
-/* Responsive styling */
-@media (max-width: 600px) {
-.login-container {
-width: 90%;
-padding: 20px;
-}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        /* Reset some basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic styling for body */
+        body {
+            background-image: url(image1.jpg);
+            background-repeat: no-repeat;
+            background-position: 0%;
+            background-size: cover;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #a67645;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Container for the form */
+        .login-container {
+            background: rgba(0, 0, 0, 0.4);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+            padding: 30px;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="text"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #0b0505;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus {
+            border-color: #654321;
+            outline: none;
+        }
+
+        .textarea-container {
+            position: relative;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        .form-btn {
+            background-color: #a6703b;
+            color: rgb(255, 255, 255);
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .form-btn:hover {
+            background-color: #523417;
+        }
+
+        .form-footer {
+            color: #ffffff;
+            font-weight: lighter;
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .form-footer a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 14px;
+            font-weight: bolder;
+        }
+
+        .form-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive styling */
+        @media (max-width: 600px) {
+            .login-container {
+                width: 90%;
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-<div class="login-container">
-<h2>SIGN IN </h2>
-<form id="loginForm">
-<!-- Name Input -->
-<div class="form-group">
-<label for="name">Full Name</label>
-<input type="text" id="name" name="name" required placeholder="Enter your full name">
-</div>
-<!-- Email Input -->
-<div class="form-group">
-<label for="email">Email Address</label>
-<input type="email" id="email" name="email" required placeholder="Enter your email address">
-</div>
-<!-- Phone Number Input -->
-<div class="form-group">
-<label for="phone">Phone Number</label>
-<input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
-</div>
-<!-- Pincode Input -->
-<div class="form-group">
-<label for="pincode">Pincode</label>
-<input type="number" id="pincode" name="pincode" required
-placeholder="Enter your pincode">
-</div>
-<!-- Address Input -->
-<div class="form-group textarea-container">
-<label for="address">Address</label>
-<textarea id="address" name="address" required placeholder="Enter your address"></textarea>
-</div>
-<!-- Submit Button -->
-<button type="submit" class="form-btn">Submit</button>
-</form>
-<div class="form-footer">
-<p>Already have an account? <a href="#">Login here</a></p>
-</div>
-</div>
-<script>
-// Handle form submission
-document.getElementById("loginForm").addEventListener("submit", function(event)
-{
-event.preventDefault(); // Prevent the form from submitting the traditional way
-// Redirect to the try3.html page after the form submission
-window.location.href = "try3.html";
-});
-</script>
+    <div class="login-container">
+        <h2>SIGN IN </h2>
+        <form id="loginForm">
+            <!-- Name Input -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+            <!-- Email Input -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+            <!-- Phone Number Input -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+            </div>
+            <!-- Pincode Input -->
+            <div class="form-group">
+                <label for="pincode">Pincode</label>
+                <input type="number" id="pincode" name="pincode" required placeholder="Enter your pincode">
+            </div>
+            <!-- Address Input -->
+            <div class="form-group textarea-container">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" required placeholder="Enter your address"></textarea>
+            </div>
+            <!-- Submit Button -->
+            <button type="submit" class="form-btn">Submit</button>
+        </form>
+        <div class="form-footer">
+            <p>Already have an account? <a href="#">Login here</a></p>
+        </div>
+    </div>
+    <script>
+        // Handle form submission
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+            // Redirect to the try3.html page after the form submission
+            window.location.href = "try3.html";
+        });
+    </script>
 </body>
+
 </html>

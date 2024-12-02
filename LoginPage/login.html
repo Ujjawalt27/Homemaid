@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="../Images/Icon_Homemaid.png" type="image/png">
+    <link rel="stylesheet" href="login.css">
+    <title>SignUp | Homemaid</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light custom-navbar fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="login.html">
+                <img src="../Images/Logo_homemaid.png" alt="Homemaid Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-wrench"></i> Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-info-circle"></i> About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fas fa-envelope"></i> Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="login-container">
+    <div class="login-container-heading">SIGN UP</div>             
+        <form id="loginForm">
+            <!-- Name Input -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+            <!-- Email Input -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+            <!-- Phone Number Input -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+            </div>
+            <!-- Pincode Input -->
+            <div class="form-group">
+                <label for="pincode">Pincode</label>
+                <input type="number" id="pincode" name="pincode" required placeholder="Enter your pincode">
+            </div>
+            <!-- Address Input -->
+            <div class="form-group textarea-container">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" required placeholder="Enter your address"></textarea>
+            </div>
+            <!-- Submit Button -->
+            <button type="submit" class="form-btn">Submit</button>
+        </form>
+        <div class="form-footer">
+            <p>Already have an account? <a href="#">Login here</a></p>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 Key. All Rights Reserved.</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Add event listeners for the view profile buttons
+        document.querySelectorAll('.view-profile').forEach(button => {
+            button.addEventListener('click', function () {
+                const card = this.closest('.card');
+                card.style.transform = 'rotateY(180deg)'; // Flip the card
+            });
+        });
+
+        // Add event listeners for the close buttons
+        document.querySelectorAll('.close-profile').forEach(button => {
+            button.addEventListener('click', function () {
+                const card = this.closest('.card');
+                card.style.transform = 'rotateY(0deg)'; // Flip the card back
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            const loginContainer = document.querySelector('.login-container');
+            // Add the 'show' class after a short delay
+            setTimeout(() => {
+                loginContainer.classList.add('show');
+            }, 100); // Adjust the delay as needed
+        });
+    </script>
+
+
+</body>
+
+</html>
