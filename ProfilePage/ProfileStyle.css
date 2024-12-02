@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 100px;
+    background-color: #CADCFC;
+}
+
+.navbar-nav {
+    padding-right: 25px;
+}
+
+.nav-item {
+    display: flex;
+    padding-right: 20px;
+}
+
+.nav-link {
+    /* padding: 0px 10px; */
+    font-size: 18px;
+    color: azure;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(4, 18, 66);
+    color: rgb(178, 178, 255);
+
+}
+
+.custom-navbar {
+    background-color: #00246B;
+}
+
+h1 {
+    color: #00246B;
+    padding-left: 30px;
+    font-weight: 700;
+}
+
+.Profiles {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    margin-top: 15px;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.card {
+    width: 100%;
+    /* Adjust height */
+    border: 2px solid #00246B;
+    border-radius: 20px;
+    /* Add this line to increase border radius */
+    transition: 0.3s;
+    margin-top: 100vh;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform-style: preserve-3d;
+    /* Preserve 3D effects */
+    transition: transform 0.6s;
+    /* Add transition for the flip */
+    position: relative;
+    /* Position relative for the flip effect */
+    /* height: 40vh; Adjust height */
+    height: 400px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    /* Adjust title size */
+    overflow: hidden;
+    /* Prevent overflow */
+    text-overflow: clip;
+    /* Add ellipsis for overflow text */
+    white-space: nowrap;
+    /* Prevent text wrapping */
+}
+
+.card-text {
+    font-size: 0.9rem;
+    /* Adjust text size */
+    overflow: hidden;
+    /* Prevent overflow */
+    text-overflow: clip;
+    /* Add ellipsis for overflow text */
+    white-space: nowrap;
+    /* Prevent text wrapping */
+}
+
+.card-img-top {
+    /* padding:20px; */
+    /* margin:10px; */
+    width: 100%;
+    /* Full width */
+    height: 150px;
+    /* Maintain aspect ratio */
+    max-height: 200px;
+    object-fit: contain;
+    /* Cover the area without distortion */
+}
+
+.card-container {
+    /* flex: 0 0 calc(24% - 20px); Set width to one-third minus margin */
+    margin-bottom: 20px;
+    /* Space between rows */
+    /* position: relative; Position relative for the flip effect */
+    /* perspective: 1000px; Add perspective to the container */
+    /* flex-shrink: 0; */
+    width: 300px;
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    /* Position absolute for both sides */
+    width: 100%;
+    /* Full width */
+    backface-visibility: hidden;
+    /* Hide back face when not visible */
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    /* Rotate back face */
+    width: 200px
+}
+
+.card-body {
+    /* flex-grow:1; */
+    width: 100%;
+    /* padding:20px; */
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.navbar-brand img {
+    height: 60px;
+    /* Adjust height as needed */
+    width: auto;
+    /* Maintain aspect ratio */
+}
+
+.btn-primary {
+    background-color: #00246B;
+    border-color: #CADCFC;
+    margin: 20px;
+    margin-left: 10px;
+    /* color:black; */
+}
+
+.btn-primary:hover {
+    background-color: #CADCFC;
+    color: black;
+    border: 1px solid black;
+}
