@@ -1,0 +1,111 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #CADCFC;
+    color: #333;
+}
+
+header {
+    background-color: rgb(4, 18, 66);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+h3{
+    font-size: 25px;
+}
+
+p{
+    font-size: 18px;
+}
+
+.checkout-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #CADCFC;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.thank-you-message {
+    text-align: center;
+    font-size: 28px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.order-summary {
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.order-summary h3 {
+    font-size: 24px;
+    color: black;
+}
+
+.order-summary p {
+    font-size: 18px;
+    color: #555;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid #bfbdbd;
+    padding: 10px 0;
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+.order-item span {
+    font-size: 18px;
+}
+
+.cta-button {
+    background-color: rgb(4, 18, 66);
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.cta-button:hover {
+    background-color: white;
+    color: black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
