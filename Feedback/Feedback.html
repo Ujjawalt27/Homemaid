@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Images/Icon_Homemaid.png" type="image/png">
+    <link rel="stylesheet" href="Feedback.css">
+    <title>Homemaid</title>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <img src="logo.png" alt="Brand Logo">
+        <div id="logo">
+
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Glow Your Way – Customizable Skincare Made Just for You</h1>
+        <a href="#customization" class="cta-btn">Start Your Customization Journey</a>
+    </section>
+    <!-- Customization Section -->
+    <section class="customization-steps" id="customization">
+        <h2>Customize Your Skincare</h2>
+        <div class="step">
+            <h3>Step 1: Choose Your Skin Type</h3>
+            <select>
+                <option value="oily">Oily</option>
+                <option value="dry">Dry</option>
+                <option value="combination">Combination</option>
+                <option value="sensitive">Sensitive</option>
+            </select>
+        </div>
+        <div class="step">
+            <h3>Step 2: Select Skin Concerns</h3>
+            <input type="checkbox" id="acne"> Acne/Breakouts
+            <input type="checkbox" id="wrinkles"> Fine Lines/Wrinkles
+            <input type="checkbox" id="dryness"> Dryness
+            <input type="checkbox" id="redness"> Redness/Sensitivity
+        </div>
+        <div class="step">
+            <h3>Step 3: Choose Product Preferences</h3>
+            <select>
+                <option value="fragrance-free">Fragrance-Free</option>
+                <option value="light-fragrance">Light Fragrance</option>
+                <option value="strong-fragrance">Strong Fragrance</option>
+            </select>
+        </div>
+        <a href="#products" class="cta-btn">Create My Skincare</a>
+    </section>
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+        <h2>Your Custom Skincare Routine</h2>
+        <div class="product-card">
+            <img src="s9.jpg" alt="Moisturizer">
+            <h3>Moisturizer</h3>
+            <p>A hydrating formula for your skin type.</p>
+            <div class="price">Rs.2500</div>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="s10.jpg" alt="Sunscreen">
+            <h3>Sunscreen</h3>
+            <p>Protect your skin from harmful UV rays with SPF 50++ sunscreen</p>
+            <div class="price">Rs.3000</div>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="s11.jpg" alt="Face Wash">
+            <h3>Face Wash</h3>
+            <p>Cleanse your skin gently.</p>
+            <div class="price">Rs.2000</div>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2>What Our Customers Are Saying</h2>
+        <div class="testimonial">
+            <img src="at.jpg" alt="Customer 1">
+            <p>"I am highly satisfied by their work"</p>
+            <h4>Ujjawal Tyagi</h4>
+        </div>
+        <div class="testimonial">
+            <img src="bb.jpg" alt="Customer 2">
+            <p>"The maids are really experienced"</p>
+            <h4>Uttu Bhai</h4>
+        </div>
+        <div class="testimonial">
+            <img src="p.jpg" alt="Customer 3">
+            <p>"Services are very good"</p>
+            <h4>Vinit Gupta</h4>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Customizable Skincare Brand | <a href="#privacy">Privacy
+                Policy</a> | <a href="#terms">Terms & Conditions</a></p>
+    </footer>
+    <script>
+        function addToCart() {
+            window.location.href = "try4.html";
+        }
+    </script>
+</body>
+
+</html>
