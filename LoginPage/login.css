@@ -11,8 +11,12 @@ body {
     background-position: 0%;
     background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+<<<<<<< HEAD
     background-color: #CADCFC;
     /* background: linear-gradient(159deg, rgb(73, 98, 172) 0%, rgb(107, 186, 222) 100%); */
+=======
+    background-color:#CADCFC;
+>>>>>>> eedd9722f5444ba171e468f66c524bbc09d082bc
     display: flex;
     justify-content: center;
     /* align-items:; */
