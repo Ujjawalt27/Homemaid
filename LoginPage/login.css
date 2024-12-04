@@ -11,7 +11,12 @@ body {
     background-position: 0%;
     background-size: cover;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+<<<<<<< HEAD
     background-color: #CADCFC;
+    /* background: linear-gradient(159deg, rgb(73, 98, 172) 0%, rgb(107, 186, 222) 100%); */
+=======
+    background-color:#CADCFC;
+>>>>>>> eedd9722f5444ba171e468f66c524bbc09d082bc
     display: flex;
     justify-content: center;
     /* align-items:; */
@@ -67,8 +72,8 @@ body {
 
 /* Container for the form */
 .login-container {
-    background: linear-gradient(135deg, #2c87e9, #5c8cc0);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(115deg, #6391ef, #2c67f2);
+    box-shadow: -10px 10px 20px rgba(0, 0, 0, 0.5), 10px 10px 20px rgba(0, 0, 0, 0.5); /* Shadow on left, right, and bottom */
     padding: 30px;
     margin: 20px;
     width: 100%;
