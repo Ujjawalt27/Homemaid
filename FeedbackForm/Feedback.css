@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d0d6e1;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4c4a4a;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bbb3b3;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: rgb(242, 238, 238);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+.fileupload-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.fileupload-wrapper div {
+    margin-bottom: 15px;
+}
+
+label {
+    cursor: pointer;
+    /* background-color: #556d8a; */
+    color: rgb(23, 23, 23);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
