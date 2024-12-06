@@ -7,11 +7,47 @@ body {
     background-size: cover;
     color: #333;
     line-height: 1.6;
+    padding-top:75px;
+}
+
+.navbar-nav {
+    padding-right: 15px;
+}
+
+.nav-item {
+    display: flex;
+    padding-right: 2px;
+}
+
+.nav-link {
+    /* padding: 0px 10px; */
+    font-size: 18px;
+    color: azure;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgb(4, 18, 66);
+    color: rgb(178, 178, 255);
+
+}
+
+.navbar-brand img {
+    height: 60px;
+    /* Adjust height as needed */
+    width: auto;
+    /* Maintain aspect ratio */
+}
+
+.custom-navbar {
+    background-color: #00246B;
 }
 
 header {
     background-image: url('../Images/image\ 3-i.jpg');
-    background-size: cover;
+    background-size:cover;
     height: 200px;
     position: relative;
     text-shadow: white;
@@ -19,6 +55,7 @@ header {
     font-size: 28px;
     text-align: center;
     padding: 10px 20px;
+    margin-top:50px;
 }
 
 header h1 {
